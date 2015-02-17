@@ -49,6 +49,7 @@ var AppView = Backbone.View.extend({
     newModelFilm.save();
     console.log(this.collection.length);
     this.collection.add(newModelFilm);
+    this.$el.find('article').remove();
     console.log(this.collection.length);
     // this.addOneFilm(newModelFilm); // alternative method
     this.addAllFilms();
