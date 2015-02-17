@@ -5,6 +5,15 @@
   <title>Feb 17 HW</title>
   <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700|Righteous' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
+  <script type="text/template" id="filmTmpl">
+
+    <h2><%= title %></h2>
+    <img src='<%= image %>'>
+    <p><%= synopsis %></p>
+    <h4><%= date %></h4>
+    <button class="delete-film">Delete Film</button>
+    <button class="edit-film">Edit Film</button>
+</script>
 </head>
 <body>
   <header>
@@ -16,33 +25,37 @@
       <h2>Chef</h2>
       <img src="http://www.movieposter.com/posters/archive/main/188/MPW-94080" alt="">
       <p>A chef who loses his restaurant job starts up a food truck in an effort to reclaim his creative promise, while piecing back together his estranged family.</p>
+      <h4>May 8, 2014</h4>
     </article>
     <article>
       <h2>Chef</h2>
       <img src="http://www.movieposter.com/posters/archive/main/188/MPW-94080" alt="">
       <p>A chef who loses his restaurant job starts up a food truck in an effort to reclaim his creative promise, while piecing back together his estranged family.</p>
+      <h4>May 8, 2014</h4>
     </article>
   </section>
-  <aside>
-    <div class="new-button">
-      <h4><button type="submit">Add New Films</button></h4>
-    </div>
 
-    <form action="">
+  <aside>
+    <form action="" id="create-film">
       <h2>Add New Film</h2>
-      <p>  <label for="item">Film Title</label>
-        <input type="text" name="item" placeholder="Title of Film">
+      <p>
+        <label for="title">Film Title</label>
+        <input type="text" name="newTitle" placeholder="Title of Film">
       </p>
       <p>
         <label for="image">Poster</label>
-        <input type="text" name="image" placeholder="Film Poster URL">
+        <input type="text" name="newImage" placeholder="Film Poster URL">
       </p>
       <p>
-        <label for="details">Synopsis</label>
-        <textarea id="details" cols="30" rows="10" name="details" placeholder="Film Synopsis "></textarea>
+        <label for="synopsis">Synopsis</label>
+        <textarea id="synopsis" cols="30" rows="10" name="newSynopsis" placeholder="Film Synopsis "></textarea>
       </p>
       <p>
-        <h4><button type="submit" class="submit-item-button">Submit Film</button></h4>
+        <label for="date">Release Date</label>
+        <input type="text" name="newDate" placeholder="Month Day, Year">
+      </p>
+      <p>
+        <h4><button type="submit">Submit Film</button></h4>
       </p>
     </form>
   </aside>

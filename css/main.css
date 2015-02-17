@@ -17,10 +17,15 @@ article {
 section {
   width: 70%; }
 
-img, p {
+img, p, h4 {
   width: 80%;
   height: auto;
   margin-left: 10%; }
+
+img {
+  -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+  -moz-box-shadow: 3px 3px 5px 2px #ccc;
+  box-shadow: 3px 3px 5px 2px #ccc; }
 
 p, h2, h4 {
   font-family: 'Philosopher', sans-serif; }
@@ -37,5 +42,5 @@ header {
 aside {
   width: 28%; }
 
-form, button {
+form {
   float: right; }
