@@ -38,7 +38,6 @@ var AppView = Backbone.View.extend({
 
   createFilm: function (event) {
     event.preventDefault();
-    console.info('In createFilm');
     var newFilm = {
       title: $('#create-film').find('input[name="newTitle"]').val(),
       image: $('#create-film').find('input[name="newImage"]').val(),
@@ -53,13 +52,12 @@ var AppView = Backbone.View.extend({
     console.log(this.collection.length);
     // this.addOneFilm(newModelFilm); // alternative method
     this.addAllFilms();
+    console.log();
     this.$el.find('#create-film').find('input, textarea').val('');
-    this.showCreate();
   },
 
   addOneFilm: function (film) {
-
-    var filmView = new FilmView({model: FilmModel});
+    var filmView = new FilmView({model: film});
     this.$el.append(filmView.render().el);
   },
 

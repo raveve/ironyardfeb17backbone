@@ -11,11 +11,11 @@ section, aside {
 
 article {
   display: inline-block;
-  width: 45%;
-  margin-left: 4%; }
+  width: 30%;
+  margin-left: 3%; }
 
 section {
-  width: 70%; }
+  width: 100%; }
 
 img, p, h4 {
   width: 80%;
@@ -39,8 +39,9 @@ h1 {
 header {
   width: 100%; }
 
-aside {
-  width: 28%; }
+form {
+  width: 30%;
+  margin-left: 2%; }
 
 form {
   float: right; }
