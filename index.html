@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feb 17 HW</title>
+  <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700|Righteous' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <h1>Cinema</h1>
+  </header>
+
+  <section>
+    <article>
+      <h2>Chef</h2>
+      <img src="http://www.movieposter.com/posters/archive/main/188/MPW-94080" alt="">
+      <p>A chef who loses his restaurant job starts up a food truck in an effort to reclaim his creative promise, while piecing back together his estranged family.</p>
+    </article>
+    <article>
+      <h2>Chef</h2>
+      <img src="http://www.movieposter.com/posters/archive/main/188/MPW-94080" alt="">
+      <p>A chef who loses his restaurant job starts up a food truck in an effort to reclaim his creative promise, while piecing back together his estranged family.</p>
+    </article>
+  </section>
+  <aside>
+    <div class="new-button">
+      <h4><button type="submit">Add New Films</button></h4>
+    </div>
+
+    <form action="">
+      <h2>Add New Film</h2>
+      <p>  <label for="item">Film Title</label>
+        <input type="text" name="item" placeholder="Title of Film">
+      </p>
+      <p>
+        <label for="image">Poster</label>
+        <input type="text" name="image" placeholder="Film Poster URL">
+      </p>
+      <p>
+        <label for="details">Synopsis</label>
+        <textarea id="details" cols="30" rows="10" name="details" placeholder="Film Synopsis "></textarea>
+      </p>
+      <p>
+        <h4><button type="submit" class="submit-item-button">Submit Film</button></h4>
+      </p>
+    </form>
+  </aside>
+
+
+
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+
+<!-- app files -->
+<script src="js/model.js"></script>
+<script src="js/collection.js"></script>
+<script src="js/view.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*  */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #D1DBBD;
+  color: #193441;
+}
+
+section, aside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+article {
+  display: inline-block;
+  width: 45%;
+  margin-left: 4%;
+}
+
+section {
+  width: 70%;
+}
+
+img, p {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+p, h2, h4 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+}
+
+header {
+  width: 100%;
+}
+
+aside {
+  width: 28%;
+}
+
+form, button {
+  float: right;
+}
