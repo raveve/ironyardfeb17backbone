@@ -44,7 +44,7 @@ var FilmView = Backbone.View.extend({
   this.model.save();
 
   $('.edit-film').show();
-  $('#mainContent').show();
+  $('').show();
 
   $('.submit-edit').hide();
   $('#update-film').hide();
