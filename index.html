@@ -9,10 +9,27 @@
 
     <h2><%= title %></h2>
     <img src='<%= image %>'>
-    <p><%= synopsis %></p>
+    <p class="ptext"><%= synopsis %></p>
     <h4><%= date %></h4>
+
+    <form id="update-film" action="">
+        <p>
+          <input type="text" name="editTitle" value="<%= title %>" placeholder="Title">
+        </p>
+        <p>
+          <input type="text" name="editImage" value="<%= image %>" placeholder="Image Url">
+        </p>
+        <p>
+          <textarea type="text" name="editSynopsis"  value="<%= synopsis %>" placeholder="Content"><%= synopsis %></textarea>
+        </p>
+        <p>
+          <input type="text" name="editDate" value="<%= date %>" placeholder="Image Url">
+        </p>
+    </form>
+
     <button class="delete-film">Delete Film</button>
     <button class="edit-film">Edit Film</button>
+    <button class="submit-edit">Submit Edit</button>
 </script>
 </head>
 <body>
@@ -40,7 +57,7 @@
         </p>
         <p>
           <label for="synopsis">Synopsis</label>
-          <textarea id="synopsis" cols="30" rows="10" name="newSynopsis" placeholder="Film Synopsis "></textarea>
+          <textarea id="synopsis" cols="30" rows="10" name="newSynopsis" placeholder="Film Synopsis"></textarea>
         </p>
         <p>
           <label for="date">Release Date</label>

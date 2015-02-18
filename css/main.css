@@ -22,7 +22,7 @@ img, p, h4 {
   height: auto;
   margin-left: 10%; }
 
-article p {
+.ptext {
   height: 100px;
   overflow: scroll; }
 
@@ -46,9 +46,13 @@ h1 {
 header {
   width: 100%; }
 
-form {
+#create-film {
   width: 30%;
-  margin-left: 2%; }
-
-form {
+  margin-left: 2%;
   float: right; }
+
+.show {
+  display: block; }
+
+.submit-edit {
+  display: none; }
